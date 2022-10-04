@@ -18,7 +18,6 @@
             <h2 class="signin-subheader">Sign in</h2>
             <!-- Sign in username -->
             <div class="signin-content" id="username">
-                <label for=""></label>
                 <input type="username" placeholder="  Username" class="signin-username input">
             </div>
             <!-- Sign in password -->
@@ -27,31 +26,54 @@
             </div>  
             <!-- Sign in button -->
             <button class="signin-page-button button" id="signinPageButton">Sign in</button>
-            <p>First Date? <span class="signup-link pointer">Signup</span></p>
+            <p>First date? <span class="signup-link">Signup</span></p>
         </div>
 
         <!-- Sign up block -->
-        <div class="signup-block padding display">
+        <div class="signup-block display">
             <span class="material-symbols-outlined signup-back">
                 arrow_back
             </span>
-            <h1 class="signup-header">Electro Estate</h1>
-            <h2 class="signup-subheader">Create new Electro State account</h2>
+            <input type="image" src="" alt="Profile Picture" width="48" height="48">
+            <h1 class="signin-header">Let's Date!</h1>
+            <h2 class="signin-subheader">Create new account</h2>
             <!-- Sign up username -->
-            <div class="flex column">
-                <label for="">Username</label>
-                <input type="text" class="signup-username input">
+            <div class="signup-content">
+                <input type="username" placeholder="  Username" class="input">
             </div>
-            <!-- Sign in username -->
-            <div class="flex column">
-                <label for="">username</label>
-                <input type="username" class="signup-username input">
+            <!-- Sign up email -->
+            <div class="signup-content">
+                <input type="text" placeholder="  Email" class="input">
             </div>
-            <!-- Sign in password -->
-            <div class="flex column">
-                <label for="">Password</label>
-                <input type="password" class="signup-password input">
+            <!-- Sign up password -->
+            <div class="signup-content">
+                <input type="password" placeholder="  Password" class="input">
             </div>  
+            <!-- Sign up Location -->
+            <div class="signup-content">
+                <input type="text" placeholder="  Location" class="input">
+            </div>  
+            <!-- Sign up Bio -->
+            <div class="signup-content">
+                <input type="text" placeholder="  Bio" class="input">
+            </div>  
+            <div class="lists">
+                <div><h4>Gender:</h4></div>
+                <div class="gender">
+                    <input type="radio" id="gmale" name="gender" value="Male">
+                    <label for="gmale">Male</label>
+                    <input type="radio" id="gfemale" name="gender" value="Female">
+                    <label for="gfemale">Female</label>
+                </div>
+                <div><h4>Interest:</h4></div>
+                <div class="interest">
+                    <input type="radio" id="imale" name="interest" value="Male">
+                    <label for="imale">Male</label>
+                    <input type="radio" id="ifemale" name="interest" value="Female">
+                    <label for="ifemale">Female</label>
+                </div>
+                
+            </div>
             <!-- Sign in button -->
             <button class="signup-page-button button">Sign up</button>
         </div>

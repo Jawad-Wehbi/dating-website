@@ -4,16 +4,14 @@
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
-.display{
- display: none;
+.display {
+	display: none !important;
 }
 .signin-page{
     display: flex;
     justify-content: center;
-    /* margin-top:25vh ; */
     width: auto;
-    height: auto;
-    padding-block: 25vh;
+    height: 100vh;
     background-image: url(Assets/Signin_back.webp);
     background-size: cover;
 }
@@ -26,6 +24,7 @@
     justify-content: space-around;
     align-items: center;
     border-radius: 100px;
+    margin: auto;
 }
 .signin-header{
     font-size: 3.5vh;
@@ -37,9 +36,33 @@
     width: 15vw;
     height: 4vh;
     border-radius: 50px;
+    border: 0ch;
 }
 .button{
     width: 15vh;
     height: 5vh;
     border-radius: 50px;
+    border: 0ch;
+}
+.signup-block{
+    background-color: rgba(214, 188, 188, 0.26);
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px;
+    margin: auto;
+}
+.signup-back{
+
+}
+.signup-link{
+    color: #ced0ca;
+}
+.lists{
+    display: flex;
+    justify-content: space-evenly;
+    width:30vw
 }

@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.display{
+ display: none;
+}
+.signin-page{
+    display: flex;
+    justify-content: center;
+    /* margin-top:25vh ; */
+    width: auto;
+    height: auto;
+    padding-block: 25vh;
+    background-image: url(Assets/Signin_back.webp);
+    background-size: cover;
+}
+.signin-block{
+    background-color: rgba(214, 188, 188, 0.26);
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 100px;
+}
+.signin-header{
+    font-size: 3.5vh;
+}
+.signin-subheader{
+    font-size: 3vh;
+}
+.input{
+    width: 15vw;
+    height: 4vh;
+    border-radius: 50px;
+}
+.button{
+    width: 15vh;
+    height: 5vh;
+    border-radius: 50px;
+}

@@ -22,13 +22,14 @@ signupBack.addEventListener("click", () => {
 ///////// LOGIN API //////////
 
 const url = formsBaseUrl + "/login";
-const email = document.getElementById("username");
-const password = document.getElementById("password");
+const email = document.getElementById("usernameInput");
+const password = document.getElementById("passwordInput");
 const submit = document.getElementById("signinPageButton");
 const error = document.getElementById("error");
 
 submit.addEventListener("click", (e) => {
   e.preventDefault();
+  console.log("object :>> ", email.value, password.value);
   if (!email.value || !password.value) {
     error.textContent = "ALL FIELDS ARE REQUIRED";
     error.classList.remove("display");
@@ -53,21 +54,3 @@ submit.addEventListener("click", (e) => {
       error.classList.remove("view-none");
     });
 });
-
-//////// SERVICES ///////
-
-utils.axiosPost = async (api, data, token = null) => {
-  try {
-    return await axios.post(utils.baseUrl + api, data, {
-      Headers: {
-        Authorization: "Bearer " + token,
-      },
-    });
-  } catch (error) {
-    console.log("Error from API");
-  }
-};
-
-utils.axiosGet = async (api) => {
-  return await axios.get(utils.baseUrl + api);
-};

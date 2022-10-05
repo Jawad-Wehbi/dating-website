@@ -13,3 +13,5 @@ Route::group(['middleware'=>'api','prefix'=>'auth'], function($router){
     route::get('/home',[LandingController::class,'home']);
     route::get('/favorite',[LandingController::class,'favorite']);
     route::post('/block',[LandingController::class,'block']);
+    route::post('/male',[LandingController::class,'male']);
+    route::post('/female',[LandingController::class,'female']);

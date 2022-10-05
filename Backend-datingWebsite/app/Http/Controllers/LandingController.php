@@ -15,4 +15,10 @@ class LandingController extends Controller
         ]);
     }
 
+    public function favorite(){
+        return  DB::table("users")
+                        ->join("favorites","id","=","favorite_id")
+                        ->select("users.*")
+                        ->get();
+    }
 }

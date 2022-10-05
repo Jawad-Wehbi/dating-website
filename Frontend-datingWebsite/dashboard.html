@@ -4,22 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./dashboard.css">
     <title>Dashboard</title>
 </head>
 <body>
-    <nav class="nav-bar">
-        <img class="card-img" src="Frontend-datingWebsite\Assets\attachment_104930705.jpg" alt="">
-        <h1>Home</h1>
-        <h1>Favorites</h1>
-
+    <nav class="navbar">
+        <img class="logoImg" src="Assets/lets-date.jpg" alt="Let's Date!">
     </nav>
-    <div class="card">
-        <img class="card-img" src="Frontend-datingWebsite\Assets\dating website.png" alt="">
-        <h3>Username</h3>
-        <h3>Bio</h3>
-        <button></button>
-    </div>
+    <ul class="topnav">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#chat">Chats</a></li>
+        <li class="right"><a href="#profile">Username</a></li>
+    </ul>
+    <section class="Home">  
+        <div class="card">
+            <img src="Assets/pro.jpg" alt="John" class="cardImg">
+            <h1>John Doe</h1>
+            <p>Harvard University</p>
+            <i class="material-icons">favorite</i>
+            <p><button class="messageButton">Contact</button></p>
+        </div>
+    </section>
+    <section id="Favorite">  
+        <div class="card">
+            <img src="Assets/pro.jpg" alt="John" class="cardImg">
+            <h1>John Doe</h1>
+            <p>Harvard University</p>
+            <p><button class="messageButton">Contact</button></p>
+        </div>
+    </section>
 </body>
 </html>

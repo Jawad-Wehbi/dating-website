@@ -1,13 +1,15 @@
-const signinBlock = document.querySelector('.signin-block');
-const signupBlock = document.querySelector('.signup-block');
-const signupLink = document.querySelector('.signup-link');
-const signupBack = document.querySelector('.signup-back');
+const homeBlock = document.querySelector('.home');
+const favoritesBlock = document.querySelector('.favorites');
+const favoritesLink = document.querySelector('.favoritesLink');
+const homeLink = document.querySelector('.homeLink');
 
-signupLink.addEventListener('click', () => {
-	signinBlock.classList.add('display');
-	signupBlock.classList.remove('display');
+
+favoritesLink.addEventListener('click', () => {
+	homeBlock.classList.add('display');
+	favoritesBlock.classList.remove('display');
 });
-signupBack.addEventListener('click', () => {
-	signinBlock.classList.remove('display');
-	signupBlock.classList.add('display');
+
+homeLink.addEventListener('click', () => {
+	homeBlock.classList.remove('display');
+	favoritesBlock.classList.add('display');
 });

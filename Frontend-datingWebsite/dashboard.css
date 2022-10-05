@@ -24,6 +24,7 @@ ul.topnav {
     padding: 0;
     overflow: hidden;
     background-color: #ba505b;
+    cursor: pointer;
 }
 
 ul.topnav li {float: left;}
@@ -35,7 +36,9 @@ ul.topnav li a {
     padding: 20px 16px;
     text-decoration: none;
 }
-
+.display {
+	display: none !important;
+}
 ul.topnav li a:hover:not(.active) {
     background-color: #939591;
     border-radius: 5px;
@@ -48,17 +51,6 @@ ul.topnav li a.active {
 
 ul.topnav li.right {float: right;}
 
-/* .card{
-    height: 40vh;
-    width: 23vw;
-    margin: 1vw;
-    background-color: #7a7a7a67;
-    
-}
-.cardImg{
-    height: 25vh;
-    width: 23vw;
-} */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 23vw;
@@ -88,6 +80,7 @@ ul.topnav li.right {float: right;}
     margin: 24px 0;
     font-size:36px;
 }
+
 @media screen and (max-width: 600px) {
     ul.topnav li.right, 
     ul.topnav li {float: none;}

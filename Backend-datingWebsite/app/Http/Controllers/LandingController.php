@@ -20,5 +20,15 @@ class LandingController extends Controller
                         ->join("favorites","id","=","favorite_id")
                         ->select("users.*")
                         ->get();
+    
     }
+
+
+    function block(Request $request){
+        DB::table('blocks')->insert(
+            ['uesr_id' => $request->uesr_id ,
+             'blocked_id' => $request->blocked_id]
+        );
+    }
+
 }

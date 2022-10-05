@@ -15,6 +15,26 @@ class LandingController extends Controller
         ]);
     }
 
+    public function male(){
+        $users = User::
+                    where('gender','male')
+                    ->get();
+        return response()->json([
+            "status" => "Done",
+            "data" => $users
+        ]);
+    }
+
+    public function female(){
+        $users = User::
+                    where('gender','female')
+                    ->get();
+        return response()->json([
+            "status" => "Done",
+            "data" => $users
+        ]);
+    }
+
     public function favorite(){
         return  DB::table("users")
                         ->join("favorites","id","=","favorite_id")

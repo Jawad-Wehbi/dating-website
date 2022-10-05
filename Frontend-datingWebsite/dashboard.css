@@ -39,6 +39,15 @@ ul.topnav li a {
 .display {
 	display: none !important;
 }
+
+.error {
+    margin: 15px 0;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
 ul.topnav li a:hover:not(.active) {
     background-color: #939591;
     border-radius: 5px;

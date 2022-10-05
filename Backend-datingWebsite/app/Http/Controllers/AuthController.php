@@ -17,22 +17,31 @@ class AuthController extends Controller
     public function register(Request $request){
         $validator=Validator::make($request->all(),[
             'name'=>'required',
-            'username'=>'required|string|unique::users',
+            'username'=>'required',
             'email'=>'required|string|email',
-            'password'=>'required|string|confirmed|min:6',
+            'password'=>'required|string|min:6',
             'bio'=>'required',
-            'profile_photo_URL'=>'required',
+            'profile_photo_URL',
             'gender'=>'required',
             'interest'=>'required',
             'location'=>'required',
         ]);
         if ($validator->fails()){
-            return response()->json($validator->errors()->toJson(),(400));
+            return response()->json($validator->errors().(400));
         }
-        $user= User::create(array_merge(
-            $validator->validated(),
-            ['password'=>bcrypt($request->password)]
-        ));
+        $user= User::create([
+            'name' => $request->name,
+            'username' => $request->username,
+            'email' => $request->email,
+            'password' => $request->password,
+            'bio' => $request->bio,
+            'profile_photo_URL' => $request->profile_photo_URL,
+            'gender' => $request->gender,
+            'interest' => $request->interest,
+            'location' => $request->location,
+
+        ]);
+
         return response()->json([
             'message'=>'User Successfully registered',
             'user'=>$user

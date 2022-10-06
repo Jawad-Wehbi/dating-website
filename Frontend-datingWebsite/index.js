@@ -43,7 +43,7 @@ submit.addEventListener("click", (e) => {
     .then((response) => {
       const data = response.data;
       if (data.error === "none") {
-        error.classList.add("dislay");
+        error.classList.add("display");
         localStorage.setItem("userToken", data.access_token);
         window.location.href =
           "http://127.0.0.1:5500/Frontend-datingWebsite/dashboard.html";
